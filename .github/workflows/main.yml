@@ -1,9 +1,16 @@
-name: Java CI
+name: RAKBANK_CICD
 
-on: [push]
 
+on:
+  
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+  
 jobs:
-  build:
+  Ant_build:
     runs-on: self-hosted
 
     steps:
