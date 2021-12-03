@@ -34,7 +34,7 @@ jobs:
         run: |
             cd RBS_AccountBalanceDetails_v1
             ant -noinput -buildfile build.xml
-            mv /root/*.bar ../bars/RBS_AccountBalanceDetails_v1_${{ steps.buildnumber.outputs.build_number }}.bar
+            cp /root/*.bar ../bars/RBS_AccountBalanceDetails_v1_${{ steps.buildnumber.outputs.build_number }}.bar
       - name: Build RBS_FXRateInquiry_v3 Project
         run: |
             cd RBS_FXRateInquiry_v3
