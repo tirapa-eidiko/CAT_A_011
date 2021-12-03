@@ -61,8 +61,6 @@ jobs:
             ant -noinput -buildfile build.xml
             mv /root/*.bar ../bars/RBS_LoanAccountDetails_v2_${{ steps.buildnumber.outputs.build_number }}.bar
 
-        
-      # Runs a set of commands using the runners shell
       - name: Check bars folder
         run: |
           cd bars
