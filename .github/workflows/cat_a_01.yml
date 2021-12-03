@@ -61,7 +61,7 @@ jobs:
             ant -noinput -buildfile build.xml
             mv /root/*.bar ../bars/RBS_LoanAccountDetails_v2_${{ steps.buildnumber.outputs.build_number }}.bar
 
-      - name: Check bars folder
+      - name: Check bars Folder
         run: |
           cd bars
           ls
