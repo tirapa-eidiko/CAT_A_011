@@ -34,32 +34,32 @@ jobs:
         run: |
             cd RBS_AccountBalanceDetails_v1
             ant -noinput -buildfile build.xml
-            cp /root/*.bar ../bars/RBS_AccountBalanceDetails_v1_${{ steps.buildnumber.outputs.build_number }}.bar
+            mv /root/*.bar ../bars/RBS_AccountBalanceDetails_v1_${{ steps.buildnumber.outputs.build_number }}.bar
       - name: Build RBS_FXRateInquiry_v3 Project
         run: |
             cd RBS_FXRateInquiry_v3
             ant -noinput -buildfile build.xml
-            cp /root/*.bar ../bars/RBS_FXRateInquiry_v3_${{ steps.buildnumber.outputs.build_number }}.bar
+            mv /root/*.bar ../bars/RBS_FXRateInquiry_v3_${{ steps.buildnumber.outputs.build_number }}.bar
       - name: Build RBS_EnquireBeneficiaryDetails_v1 Project
         run: |
             cd RBS_EnquireBeneficiaryDetails_v1
             ant -noinput -buildfile build.xml
-            cp /root/*.bar ../bars/RBS_EnquireBeneficiaryDetails_v1_${{ steps.buildnumber.outputs.build_number }}.bar
+            mv /root/*.bar ../bars/RBS_EnquireBeneficiaryDetails_v1_${{ steps.buildnumber.outputs.build_number }}.bar
       - name: Build RBS_FetchBeneficiaryBanksList_v1 Project
         run: |
             cd RBS_FetchBeneficiaryBanksList_v1
             ant -noinput -buildfile build.xml
-            cp /root/*.bar ../bars/RBS_FetchBeneficiaryBanksList_v1_${{ steps.buildnumber.outputs.build_number }}.bar
+            mv /root/*.bar ../bars/RBS_FetchBeneficiaryBanksList_v1_${{ steps.buildnumber.outputs.build_number }}.bar
       - name: Build RBS_FetchFXDealList_v1 Project
         run: |
             cd RBS_FetchFXDealList_v1
             ant -noinput -buildfile build.xml
-            cp /root/*.bar ../bars/RBS_FetchFXDealList_v1_${{ steps.buildnumber.outputs.build_number }}.bar
+            mv /root/*.bar ../bars/RBS_FetchFXDealList_v1_${{ steps.buildnumber.outputs.build_number }}.bar
       - name: Build RBS_LoanAccountDetails_v2 Project
         run: |
             cd RBS_LoanAccountDetails_v2
             ant -noinput -buildfile build.xml
-            cp /root/*.bar ../bars/RBS_LoanAccountDetails_v2_${{ steps.buildnumber.outputs.build_number }}.bar
+            mv /root/*.bar ../bars/RBS_LoanAccountDetails_v2_${{ steps.buildnumber.outputs.build_number }}.bar
 
       - name: Check bars Folder
         run: |
