@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
 
         
-      - name: Create bars Folder
+      - name: Create bars Folders
         run: mkdir bars
         
       - name: Build RBS_AccountBalanceDetails_v1 Project
