@@ -1,9 +1,16 @@
-name: Java CI
+name: RAKBANK_CICD
 
-on: [push]
 
+on:
+  
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
+  
 jobs:
-  build:
+  Ant_build:
     runs-on: self-hosted
 
     steps:
@@ -13,5 +20,5 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Build with Ant
+      - name: Build with Ant1
         run: ant -noinput -buildfile build.xml
