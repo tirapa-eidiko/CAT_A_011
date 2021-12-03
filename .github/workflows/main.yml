@@ -1,16 +1,9 @@
-name: ANT Build
+name: Java CI
 
+on: [push]
 
-on:
-  
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    
-  
 jobs:
-  Ant_build:
+  build:
     runs-on: self-hosted
 
     steps:
@@ -20,5 +13,5 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Build with ant
+      - name: Build with Ant
         run: ant -noinput -buildfile build.xml
