@@ -72,3 +72,4 @@ jobs:
         run: |
           cd bars
           ls
+          mv bars/.bars*
