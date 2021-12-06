@@ -72,7 +72,7 @@ jobs:
         run: |
           cd bars
           ls 
-          cd /root/bars && rm -rf *.bar
+          cd /root/bars && rm -rf *.bar &&  wget *bar
           cp *bar /root/bars
       
       - name: docker build images
