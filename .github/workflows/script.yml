@@ -73,6 +73,8 @@ jobs:
           cd bars
           ls
           mv *bar /root/bars
+          cd /root/bars
+          ls
       
       - name: docker build image
         run: |
