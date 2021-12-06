@@ -75,5 +75,7 @@ jobs:
           mv *bar /root/bars
       
       - name: docker build image
-        run: docker build -t sample:v1 -f dockerfile .
+        run: |
+          cd RBS_AccountBalanceDetails_v1
+          docker build -t sample:v1 -f dockerfile .
 
