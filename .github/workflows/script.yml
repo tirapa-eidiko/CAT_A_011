@@ -76,7 +76,7 @@ jobs:
           cd /root/bars
           ls
       
-      - name: docker build image
+      - name: docker build images
         run: |
           docker build -t sample:v1 -f /root/dockerfile .
           docker images
