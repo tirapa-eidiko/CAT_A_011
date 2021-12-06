@@ -72,4 +72,5 @@ jobs:
         run: |
           cd bars
           ls
+          cd ..
           mv bars /root/bars
