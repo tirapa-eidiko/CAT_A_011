@@ -79,4 +79,5 @@ jobs:
       - name: docker build image
         run: |
           docker build -t sample:v1 -f /root/dockerfile .
+          docker images
 
