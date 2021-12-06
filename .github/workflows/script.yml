@@ -71,10 +71,9 @@ jobs:
       - name: Check jars folder
         run: |
           cd bars
-          ls
+          ls 
+          cd /root/bars && rm -rf *.bar
           cp *bar /root/bars
-          cd /root/bars
-          ls
       
       - name: docker build images
         run: |
