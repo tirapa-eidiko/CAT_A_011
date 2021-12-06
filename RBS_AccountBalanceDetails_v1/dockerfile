@@ -1,4 +1,3 @@
 FROM ibmcom/ace
-USER aceuser
-COPY /root/bars/RBS_AccountBalanceDetails_v1_10.bar /home/aceuser/initial-config/bars/
-USER aceuser
+ARG BAR_FILE=/root/bars/RBS_AccountBalanceDetails_v1*.jar
+COPY ${BAR_FILE} app.jar
